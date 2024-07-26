@@ -6,6 +6,8 @@ CREATE TABLE Book(
     title VARCHAR(130),
     author_id INT,
     FOREIGN KEY(author_id) REFERENCES Authors(author_id)
+	price DOUBLE,
+	publication_date DATE
     
 );
 
